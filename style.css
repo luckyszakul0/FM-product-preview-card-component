@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+:root{
+    font-size: 14px;
+    --darkerCyan: hsl(158, 36%, 15%);
+    --darkCyan: hsl(158, 36% ,37%);
+    --cream: hsl(30, 38%, 92%);
+    --veryDarkBlue: hsl(212, 21%, 14%);
+    --darkGrayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0,0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--cream);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif;
+}
+main{
+    width: 90vw;
+    height: 90vh;
+    background: var(--white);
+    border-radius: 10px;
+}
+main>img{
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+figcaption{
+    letter-spacing: 0.3rem;
+    font-size: 0.9rem;
+    padding: 20px 0 0 20px;
+}
+.main-section{
+    padding: 7.5px 20px;
+}
+h1{
+    font-family: Fraunces, serif;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    color: var(--veryDarkBlue);
+}
+h1, .description{
+    margin-bottom: 20px;
+}
+figcaption, .description, #old-price{
+    color: var(--darkGrayishBlue);
+}
+.prices{
+    display: inline;
+}
+.prices-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#current-price{
+    font-size: 2.5rem;
+    color: var(--darkCyan);
+    font-family: Fraunces, serif;
+}
+#old-price{
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+button{
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    padding: 15px 0 15px 0;
+    border-radius: 10px;
+    border: 0;
+    background: var(--darkCyan);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+button>img{
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+button:hover{
+    background: var(--darkerCyan);
+    box-shadow: 0 0 2.5px black;
+}
+.attribution{ 
+    font-size: 0.75rem; 
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
