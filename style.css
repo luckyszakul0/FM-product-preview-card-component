@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
 :root{
-    font-size: 14px;
     --darkerCyan: hsl(158, 36%, 15%);
     --darkCyan: hsl(158, 36% ,37%);
     --cream: hsl(30, 38%, 92%);
     --veryDarkBlue: hsl(212, 21%, 14%);
     --darkGrayishBlue: hsl(228, 12%, 48%);
     --white: hsl(0,0%, 100%);
+}
+html{
+    font-size: 14px;
 }
 *{
     margin: 0;
@@ -15,7 +17,6 @@
 }
 body{
     background: var(--cream);
-    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -23,6 +24,7 @@ body{
     flex-direction: column;
     font-family: Montserrat, sans-serif;
 }
+/* the main container styles */
 main{
     width: 90vw;
     height: 90vh;
@@ -37,13 +39,14 @@ main>img{
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
-figcaption{
-    letter-spacing: 0.3rem;
-    font-size: 0.9rem;
-    padding: 20px 0 0 20px;
-}
+/* the white bg section */
 .main-section{
     padding: 7.5px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.main-section > *:not(:last-child){
+    margin-bottom: 1.25rem;
 }
 h1{
     font-family: Fraunces, serif;
@@ -51,10 +54,12 @@ h1{
     line-height: 2.25rem;
     color: var(--veryDarkBlue);
 }
-h1, .description{
-    margin-bottom: 20px;
+.product-subtitle{  /* PERFUME text */
+    letter-spacing: 0.35rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
 }
-figcaption, .description, #old-price{
+.product-subtitle, .description, #old-price{
     color: var(--darkGrayishBlue);
 }
 .prices{
@@ -75,7 +80,7 @@ figcaption, .description, #old-price{
     font-size: 0.9rem;
 }
 button{
-    margin-top: 20px;
+    cursor: pointer;
     display: block;
     width: 100%;
     padding: 15px 0 15px 0;
@@ -84,12 +89,11 @@ button{
     background: var(--darkCyan);
     color: var(--white);
     font-weight: 700;
-    font-size: 1.05rem;
-}
-button>img{
-    margin-right: 10px;
-    position: relative;
-    top: 2px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 button:hover{
     background: var(--darkerCyan);
