@@ -30,10 +30,11 @@ main{
     height: 90vh;
     background: var(--white);
     border-radius: 10px;
+    overflow: hidden;
 }
-main>img{
+picture>img{
     height: 40%;
-    width: 100%;
+    width: auto;
     object-fit: cover;
     border-radius: inherit;
     border-bottom-left-radius: 0;
@@ -105,4 +106,65 @@ button:hover{
 }
 .attribution a {
     color: hsl(228, 45%, 44%); 
+}
+footer{
+    position: absolute;
+    bottom: 10px;
+}
+/*small width tablets*/
+@media only screen and (max-width: 600px) and (min-width: 450px){
+    html{
+        font-size: 18px;
+    }
+}
+/*large width tablets*/
+@media only screen and (max-width:850px) and (min-width: 600px){
+    main{
+        height: 70vh;
+    }
+    picture>img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .main-section{
+        padding: 2rem;
+    }
+    .main-section > *:not(:last-child){
+        margin-bottom: 25px;
+    }
+}
+/*styles the same for desktops and large tablets*/
+@media only screen and (min-width: 600px){
+    html{
+        font-size: 18px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    picture>img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    picture{
+        height: 100%;
+    }
+    .description{
+        line-height: 1.75rem;
+    }
+}
+/*desktop*/
+@media only screen and (min-width: 850px){
+    main{
+        width: 45vw;
+        height: 65vh;
+    }
+    .main-section > *:not(:last-child){
+        margin-bottom: 35px;
+    }
+    .main-section{
+        padding: 3rem;
+    }
 }
