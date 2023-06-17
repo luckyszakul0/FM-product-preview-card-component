@@ -154,7 +154,7 @@ footer{
 @media only screen and (min-width: 675px){
     .product-card{
         display: grid;
-        max-width: 35%;
+        max-width: 40%;
         max-height: 60%;
         grid-template-columns: repeat(2, 1fr);
         border-radius: var(--biggerBRadius);
