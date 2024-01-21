@@ -78,7 +78,7 @@ If JS is needed I will use jQuery as I'm learning it at the moment. If I will ad
 ## Author
 
 - GitHub - [Łukasz Lubaszewski](https://github.com/luckyszakul0)
-- Frontend Mentor - [@Lukasz710](https://www.frontendmentor.io/profile/Lukasz710)
+- Frontend Mentor - [@luckyszakul0](https://www.frontendmentor.io/profile/luckyszakul0)
 
 ## Acknowledgments
 
